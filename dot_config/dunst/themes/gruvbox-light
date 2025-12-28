@@ -1,0 +1,50 @@
+[global]
+follow = mouse
+width = (300,600)
+progress_bar_max_width = 500
+notification_limit =3
+offset = (20,20)
+gap_size = 5
+horizontal_padding = 20
+padding = 15
+idle_threshold = 60
+show_age_threshold = 90
+font = "JetBrainsMono Nerd Font Propo 10"
+frame_width = 1
+mouse_left_click = "do_action, close_current"
+mouse_middle_click = "context"
+mouse_right_click = "close_all"
+dmenu = /usr/bin/tofi
+
+[spotify]
+appname = "Spotify"
+max_icon_size = 64
+urgency = low
+
+[grimshot]
+appname = "grimshot"
+max_icon_size = 240
+urgency = low
+
+[urgency_critical]
+background = "#fbf1c7"
+foreground = "#3c3836"
+frame_color = "#9d0006"
+highlight = "#9d0006"
+format = "<span color='#9d0006'>%a</span>\n<b>%s</b>\n%b"
+
+[urgency_normal]
+background = "#fbf1c7"
+foreground = "#3c3836"
+frame_color = "#076678"
+highlight = "#076678"
+format = "<span color='#076678'>%a</span>\n<b>%s</b>\n%b"
+timeout = 10
+
+[urgency_low]
+background = "#fbf1c7"
+foreground = "#3c3836"
+frame_color = "#928374"
+highlight = "#928374"
+format = "<span color='#928374'>%a</span>\n<b>%s</b>\n%b"
+timeout = 5

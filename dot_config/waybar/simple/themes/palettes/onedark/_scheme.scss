@@ -1,0 +1,23 @@
+@use "onedark" as C;
+
+$fg: C.$fg;
+$bg: C.$bg_d;
+$bg1: C.$black;
+
+$ws-focused-fg: C.$purple;
+$ws-urgent-fg: C.$red;
+$ws-fg: C.$grey;
+
+$success: C.$green;
+$moderate: C.$yellow;
+$warning: C.$orange;
+$error: C.$red;
+$ignored: C.$grey;
+$outline: C.$bg2;
+$hover: C.$bg1;
+
+$mode-fg: C.$red;
+
+$audio-fg: C.$blue;
+
+$sys-stat-fg: C.$fg;

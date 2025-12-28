@@ -1,0 +1,50 @@
+# vi: ft=swayconfig
+set $bg_dim #1B1B1B
+set $bg0 #282828
+set $bg1 #32302F
+set $bg2 #32302F
+set $bg3 #45403D
+set $bg4 #45403D
+set $bg5 #5A524C
+
+set $bg_diff_red #402120
+set $bg_diff_green #34381B
+set $bg_diff_blue #0E363E
+set $bg_statusline1 #32302F
+set $bg_statusline2 #3A3735
+set $bg_statusline3 #504945
+set $bg_current_word #3C3836
+
+set $bg_visual_red #4C3432
+set $bg_visual_green #3B4439
+set $bg_visual_blue #374141
+set $bg_visual_yellow #4F422E
+set $bg_visual_purple #443840
+
+set $fg0 #D4BE98
+set $fg1 #DDC7A1
+
+set $red #EA6962
+set $green #A9B665
+set $blue #7DAEA3
+set $yellow #D8A657
+set $purple #D3869B
+set $orange #E78A4E
+set $aqua #89B482
+
+set $bg_red #EA6962
+set $bg_green #A9B665
+set $bg_yellow #D8A657
+
+set $grey0 #7C6F64
+set $grey1 #928374
+set $grey2 #A89984
+
+
+# client.<class> border background text-color indicator child_border
+client.focused           $blue		$blue   $bg0	$blue	$blue
+client.focused_inactive  $grey0     $bg0    $grey0	$grey0  $grey0
+client.unfocused         $grey0     $bg0    $grey0  $grey0  $grey0
+client.urgent            $red       $red    $bg0   	$red    $red
+
+output * bg $bg0 solid_color

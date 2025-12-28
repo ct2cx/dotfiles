@@ -1,0 +1,43 @@
+# Base Colors
+set $bg             #282828
+set $fg             #ebdbb2
+set $red            #fb4934
+set $green          #b8bb26
+set $yellow         #fabd2f
+set $blue           #83a598
+set $purple         #d3869b
+set $aqua           #8ec07c
+set $gray           #928374
+set $orange         #fe8019
+
+# Alternative Colors
+set $alt-red        #cc241d
+set $alt-green      #98971a
+set $alt-yellow     #d79921
+set $alt-blue       #458588
+set $alt-purple     #b16286
+set $alt-aqua       #689d6a
+set $alt-gray       #a89984
+set $alt-orange     #d65d0e
+
+# Background Shades
+set $bg0_s          #32302f
+set $bg0_h          #1d2021
+set $bg0            #282828
+set $bg1            #3c3836
+set $bg2            #504945
+set $bg3            #665c54
+set $bg4            #7c6f64
+
+# Foreground Shades
+set $fg0            #fbf1c7
+set $fg1            #ebdbb2
+set $fg2            #d5c4a1
+set $fg3            #bdae93
+set $fg4            #a89984
+
+# client.<class> border background text-color indicator child_border
+client.focused           $alt-blue    $bg     $fg     $alt-blue     $alt-blue
+client.focused_inactive  $bg2         $bg     $fg4    $bg2          $bg2
+client.unfocused         $bg2         $bg     $fg4    $bg2          $bg2
+client.urgent            $red         $bg     $red    $red          $red

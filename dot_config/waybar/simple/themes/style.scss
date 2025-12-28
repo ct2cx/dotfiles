@@ -1,0 +1,102 @@
+@use "palettes/onedark/scheme" as Scheme;
+
+$global-radius: 10px;
+$global-spacing: 0px;
+
+@mixin font {
+  font: bold 13px JetBrainsMono Nerd Font Propo;
+}
+
+window#waybar.topbar {
+  @include font;
+  background-color: Scheme.$bg;
+  color: Scheme.$fg;
+}
+
+#workspaces {
+  margin: 10px;
+  margin-left: 14px;
+  margin-right:0px;
+  padding: 0px;
+}
+
+#workspaces button {
+  all: unset;
+  margin-right: 10px;
+  color: Scheme.$ws-fg;
+  &.focused {
+    color: Scheme.$ws-focused-fg;
+  }
+  &.urgent {
+    color: Scheme.$ws-urgent-fg;
+  }
+}
+
+#mode {
+  margin-left: $global-spacing - 10px;
+  color: Scheme.$mode-fg;
+}
+
+#pulseaudio.mic, #pulseaudio.spk {
+  margin-right: $global-spacing;
+  color: Scheme.$audio-fg;
+}
+
+#pulseaudio.mic.source-muted, #pulseaudio.spk.muted {
+  color: Scheme.$ignored;
+}
+
+#battery {
+  &.good { color: Scheme.$success; }
+  &.moderate { color: Scheme.$moderate; }
+  &.warning { color: Scheme.$warning; }
+  &.critical { color: Scheme.$error; }
+  margin-right: 14px;
+}
+
+#cpu, #memory {
+  margin-right: $global-spacing;
+  color: Scheme.$sys-stat-fg;
+  &.moderate { color: Scheme.$moderate; }
+  &.high { color: Scheme.$warning; }
+  &.critical { color: Scheme.$error; }
+}
+
+#tray {
+  color: Scheme.$bg;
+  menu {
+    color: Scheme.$fg;
+    background-color: Scheme.$bg1;
+    separator {
+      color: Scheme.$ignored;
+      background-color: Scheme.$ignored;
+      opacity: 0.1;
+    }
+  }
+  menuitem:hover {
+    color: Scheme.$fg;
+    background: Scheme.$hover;
+  }
+  menuitem:disabled {
+    color: Scheme.$ignored;
+  }
+}
+
+#privacy {
+  color: Scheme.$error;
+}
+
+tooltip {
+  all: unset;
+}
+
+tooltip label {
+  all: unset;
+  @include font;
+  color: Scheme.$fg;
+  background-color: Scheme.$bg;
+  border: 1px solid Scheme.$outline;
+  border-radius: $global-radius;
+  padding: 15px;
+  opacity: 0.95;
+}

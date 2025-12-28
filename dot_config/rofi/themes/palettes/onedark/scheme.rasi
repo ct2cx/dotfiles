@@ -1,0 +1,27 @@
+@import "onedark"
+
+* {
+	text: @fg;
+	bg: @bg-d;
+	magenta: @purple;
+	cyann: @cyan; // intentionally `nn` because you cannot assign the same variable!
+
+	error: @red;
+	success: @green;
+	moderate: @orange;
+	warning: @yellow;
+	info: @blue;
+	ignored: @grey;
+	hover: @bg1;
+
+	entry-bg: @bg1;
+	element-selected-bg: @bg2;
+	text-highlight-fg: bold #e86671;
+
+	powermenu-textbox-bg: @cyan;
+	powermenu-textbox-fg: @bg;
+	powermenu-element-text-bg: @bg1;
+	powermenu-element-text-fg: @ignored;
+	powermenu-element-text-selected-bg: @red;
+	powermenu-element-text-selected-fg: @bg;
+}

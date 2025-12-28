@@ -1,0 +1,45 @@
+[colors]
+background = 282828  # bg0
+foreground = d4be98  # fg0
+
+regular0 = 282828  # bg0
+regular1 = ea6962  # red
+regular2 = a9b665  # green
+regular3 = d8a657  # yellow
+regular4 = 7daea3  # blue
+regular5 = d3869b  # purple
+regular6 = 89b482  # aqua
+regular7 = d4be98  # fg0
+
+bright0 = 7c6f64  # grey0
+bright1 = ea6962
+bright2 = a9b665
+bright3 = d8a657
+bright4 = 7daea3
+bright5 = d3869b
+bright6 = 89b482
+bright7 = d4be98
+
+[colors2]
+background = fbf1c7
+foreground = 654735
+
+regular0 = fbf1c7
+regular1 = c14a4a
+regular2 = 6c782e
+regular3 = b47109
+regular4 = 45707a
+regular5 = 945e80
+regular6 = 4c7a5d
+regular7 = 654735
+
+bright0 = a89984
+bright1 = c14a4a
+bright2 = 6c782e
+bright3 = b47109
+bright4 = 45707a
+bright5 = 945e80
+bright6 = 4c7a5d
+bright7 = 654735
+
+#vi: ft=dosini

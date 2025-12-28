@@ -1,0 +1,6 @@
+![workspace](./media/workspace.png)
+![workspace2](./media/workspace2.png)
+![launcher](./media/launcher.png)
+![powermenu](./media/powermenu.png)
+![dunst](./media/dunst.png)
+![waybar](./media/waybar.png)

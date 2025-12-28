@@ -1,0 +1,44 @@
+@import "palettes/onedark/scheme"
+
+window {
+	font: "JetBrainsMono Nerd Font Propo 13";
+	height: 220px;
+	width: 502px;
+	padding: 10px;
+}
+
+window, mainbox, listview {
+	background-color: @bg;
+}
+
+mainbox {
+	children: [message, listview];
+	spacing: 10px;
+}
+
+textbox {
+	padding: 12px 12px 12px 18px;
+	background-color: @powermenu-textbox-bg;
+	text-color: @powermenu-textbox-fg;
+}
+
+element {
+	children: [element-text];
+}
+
+element-text.selected {
+	background-color: @powermenu-element-text-selected-bg;
+	text-color: @powermenu-element-text-selected-fg;
+}
+
+element-text {
+	font: "JetBrains Mono Nerd Font Propo 30";
+	background-color: @powermenu-element-text-bg;
+	text-color: @powermenu-element-text-fg;
+	padding: 45px 0px 45px 59px;
+}
+
+listview {
+	columns: 3;
+	spacing: 10px;
+}

@@ -1,0 +1,14 @@
+configuration {
+	modes: ["drun"];
+	show-icons: true;
+	show: "drun";
+	case-smart: true;
+	scroll-method: 1;
+	normalize-math: true;
+	no-lazy-grab: true;
+	markup: true;
+	steal-focus: true;
+	drun-match-fields: [name];
+}
+
+@theme "simple/launcher"
