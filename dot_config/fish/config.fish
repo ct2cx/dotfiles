@@ -27,3 +27,6 @@ alias gic="git commit"
 alias gip="git push"
 alias gil="git log"
 alias sass="sass --no-source-map"
+alias playtorrent="webtorrent download --mpv"
+
+mise activate fish | source
