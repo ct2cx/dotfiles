@@ -1,6 +1,6 @@
 [global]
 follow = mouse
-width = (300,600)
+width = (300,400)
 progress_bar_max_width = 500
 notification_limit =8
 offset = (20,20)
