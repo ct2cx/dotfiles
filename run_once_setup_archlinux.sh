@@ -39,7 +39,7 @@ sudo sh << 'EOF'
 pacman -Syu aria2 git sway swaybg waybar dunst fish neovim pipewire pipewire-pulse wireplumber curl \
 firefox noto-fonts noto-fonts-emoji nwg-look inter-font gcc tmux unzip eza papirus-icon-theme chezmoi \
 wl-clipboard xdg-desktop-portal-gtk xdg-desktop-portal-wlr openssh ttf-jetbrains-mono-nerd mise usage \
-man-db sway-contrib xorg-xwayland network-manager-applet mate-polkit chrony xz ddcutil rofi --noconfirm
+man-db sway-contrib xorg-xwayland network-manager-applet mate-polkit chrony xz ddcutil rofi --noconfirm --needed
 systemctl enable chronyd.service
 EOF
 
