@@ -1,0 +1,144 @@
+@use 'sass:list';
+@use "palettes/onedark/scheme" as Scheme;
+
+$global-radius: 10px;
+$global-spacing: 6px;
+$inner-padding: 2px 6px;
+$global-border-radius: 5px;
+
+@mixin font {
+  font: bold 14px JetBrainsMono Nerd Font Propo;
+}
+
+@mixin decorate {
+  margin: 10px 0px;
+  padding: $inner-padding;
+  border-radius: $global-border-radius;
+}
+
+window#waybar.topbar {
+  @include font;
+  background-color: Scheme.$bg;
+  color: Scheme.$fg;
+}
+
+#workspaces {
+  margin: 10px;
+  margin-left: 14px;
+  margin-right:0px;
+  padding: 0px;
+}
+
+#workspaces button {
+  all: unset;
+  @include decorate;
+  margin: 0px;
+  margin-right: 6px;
+  background: Scheme.$ws-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$ws-bg);
+  color: Scheme.$ws-fg;
+  &.focused {
+    background: Scheme.$ws-focused-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$ws-focused-bg);
+    color: Scheme.$ws-focused-fg;
+  }
+  &.urgent {
+    background: Scheme.$ws-urgent-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$ws-urgent-bg);
+    color: Scheme.$ws-urgent-fg;
+  }
+}
+
+#mode {
+  @include decorate;
+  background: Scheme.$mode-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$mode-bg);
+  color: Scheme.$mode-fg;
+}
+
+#audio {
+  @include decorate;
+  background: Scheme.$audio-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$audio-bg);
+  color: Scheme.$audio-fg;
+  margin-right: $global-spacing;
+}
+
+#pulseaudio.mic {
+  margin-right: 10px;
+}
+
+#pulseaudio.mic.source-muted {
+  margin-right: 6px;
+}
+
+#battery {
+  color: Scheme.$bg;
+  @include decorate;
+  &.good {
+    background: Scheme.$success linear-gradient(to bottom, rgba(white, 0.4), Scheme.$success);
+  }
+  &.warning {
+    background: Scheme.$warning linear-gradient(to bottom, rgba(white, 0.4), Scheme.$warning);
+  }
+  &.critical {
+    background: Scheme.$error linear-gradient(to bottom, rgba(white, 0.4), Scheme.$error);
+  }
+  margin-right: 14px - list.nth($inner-padding, 2);
+}
+
+#cpu, #memory {
+  @include decorate;
+  margin-right: $global-spacing;
+  background: Scheme.$sys-stat-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$sys-stat-bg);
+  color: Scheme.$sys-stat-fg;
+  &.moderate {
+    background: Scheme.$moderate linear-gradient(to bottom, rgba(white, 0.4), Scheme.$moderate);
+  }
+  &.warning {
+    background: Scheme.$warning linear-gradient(to bottom, rgba(white, 0.4), Scheme.$warning);
+  }
+  &.critical {
+    background: Scheme.$error linear-gradient(to bottom, rgba(white, 0.4), Scheme.$error);
+  }
+}
+
+#tray {
+  @include decorate;
+  background: Scheme.$tray-bg linear-gradient(to bottom, rgba(gray, 0.4), Scheme.$tray-bg);
+  color: Scheme.$bg;
+  margin-right: $global-spacing;
+  menu {
+    color: Scheme.$fg;
+    background-color: Scheme.$bg1;
+    separator {
+      color: Scheme.$ignored;
+      background-color: Scheme.$ignored;
+      opacity: 0.1;
+    }
+  }
+  menuitem:hover {
+    color: Scheme.$fg;
+    background: Scheme.$hover;
+  }
+  menuitem:disabled {
+    color: Scheme.$ignored;
+  }
+}
+
+#privacy {
+  @include decorate;
+  background: Scheme.$error linear-gradient(to bottom, rgba(white, 0.4), Scheme.$error);
+  color: Scheme.$bg;
+  margin-right: $global-spacing;
+}
+
+tooltip {
+  all: unset;
+}
+
+tooltip label {
+  all: unset;
+  @include font;
+  color: Scheme.$fg;
+  background-color: Scheme.$bg;
+  border: 1px solid Scheme.$outline;
+  border-radius: $global-radius;
+  padding: 15px;
+  opacity: 0.95;
+}

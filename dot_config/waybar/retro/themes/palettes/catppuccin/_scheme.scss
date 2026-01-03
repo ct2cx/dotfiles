@@ -1,0 +1,31 @@
+@use "catppuccin-macchiato" as C;
+
+$fg: C.$text;
+$bg: C.$mantle;
+$bg1: C.$crust;
+
+$ws-focused-bg: C.$mauve;
+$ws-focused-fg: $bg;
+$ws-urgent-bg: C.$red;
+$ws-urgent-fg: $bg;
+$ws-bg: C.$overlay0;
+$ws-fg: $bg;
+
+$success: C.$green;
+$moderate: C.$yellow;
+$warning: C.$peach;
+$error: C.$red;
+$ignored: C.$overlay0;
+$outline: C.$overlay0;
+$hover: C.$base;
+
+$mode-fg: $bg;
+$mode-bg: C.$red;
+
+$audio-fg: $bg;
+$audio-bg: C.$lavender;
+
+$sys-stat-fg: $bg;
+$sys-stat-bg: C.$text;
+
+$tray-bg: C.$surface0;
