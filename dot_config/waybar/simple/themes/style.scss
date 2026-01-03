@@ -58,7 +58,7 @@ window#waybar.topbar {
   margin-right: $global-spacing;
   color: Scheme.$sys-stat-fg;
   &.moderate { color: Scheme.$moderate; }
-  &.high { color: Scheme.$warning; }
+  &.warning { color: Scheme.$warning; }
   &.critical { color: Scheme.$error; }
 }
 

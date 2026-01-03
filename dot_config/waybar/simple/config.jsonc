@@ -56,7 +56,7 @@
 		"interval": 2,
 		"states": {
 			"moderate": 50,
-			"high": 70,
+			"warning": 70,
 			"critical": 90
 		},
 		"tooltip": false
@@ -68,7 +68,7 @@
 		"tooltip": false,
 		"states": {
 			"moderate": 50,
-			"high": 70,
+			"warning": 70,
 			"critical": 90
 		}
 	},

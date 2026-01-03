@@ -60,7 +60,7 @@ window#waybar.topbar {
 #cpu.moderate, #memory.moderate {
   color: #e5c07b;
 }
-#cpu.high, #memory.high {
+#cpu.warning, #memory.warning {
   color: #d19a66;
 }
 #cpu.critical, #memory.critical {
