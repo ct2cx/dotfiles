@@ -14,9 +14,8 @@
 		"interval": 5,
 		"format": "{icon} {capacity}%",
 		"format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-		"format-status": { "Charging": "chr" },
+		"format-status": { "charging": "󰂄 {capacity}%" },
 		"states": {
-			"good": 100,
 			"moderate": 80,
 			"warning": 50,
 			"critical": 20,
