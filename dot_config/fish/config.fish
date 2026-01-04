@@ -4,8 +4,8 @@ set -gx EDITOR nvim
 set -gx MANPAGER "nvim +Man!"
 
 # Add to PATH
-fish_add_path ~/.local/bin
-fish_add_path ~/.cargo/bin
+fish_add_path -g ~/.local/bin
+fish_add_path -g ~/.cargo/bin
 
 # Setting up eza
 type -P eza > /dev/null 2>&1
