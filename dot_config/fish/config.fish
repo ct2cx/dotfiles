@@ -34,4 +34,7 @@ function multicd
 end
 abbr --add dotdot --regex '^\.\.+$' --function multicd
 
-mise activate fish | source
+type -P mise > /dev/null 2>&1
+if test $status -eq 0
+	mise activate fish | source
+end
