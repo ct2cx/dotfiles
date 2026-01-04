@@ -1,5 +1,5 @@
 window#waybar.topbar {
-  font: bold 14px JetBrainsMono Nerd Font Propo;
+  font: 14px JetBrainsMono Nerd Font Propo;
   background-color: #21252b;
   color: #abb2bf;
 }
@@ -132,7 +132,7 @@ tooltip {
 
 tooltip label {
   all: unset;
-  font: bold 14px JetBrainsMono Nerd Font Propo;
+  font: 14px JetBrainsMono Nerd Font Propo;
   color: #abb2bf;
   background-color: #21252b;
   border: 1px solid #393f4a;
