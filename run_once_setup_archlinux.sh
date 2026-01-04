@@ -25,6 +25,7 @@ setup_themes() {
 	gsettings set org.gnome.desktop.interface font-hinting "slight"
 	gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 	gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+	nwg-look -x
 }
 
 setup_tmux() {
@@ -38,8 +39,9 @@ setup_tmux() {
 sudo sh << 'EOF'
 pacman -Syu aria2 git sway swaybg waybar dunst fish neovim pipewire pipewire-pulse wireplumber curl \
 firefox noto-fonts noto-fonts-emoji nwg-look inter-font gcc tmux unzip eza papirus-icon-theme chezmoi \
-wl-clipboard xdg-desktop-portal-gtk xdg-desktop-portal-wlr openssh ttf-jetbrains-mono-nerd mise usage \
-man-db sway-contrib xorg-xwayland network-manager-applet mate-polkit chrony xz ddcutil rofi --noconfirm --needed
+wl-clipboard xdg-desktop-portal-gtk xdg-desktop-portal-wlr openssh ttf-jetbrains-mono-nerd \
+man-db sway-contrib xorg-xwayland network-manager-applet mate-polkit chrony xz ddcutil rofi \
+foot otf-font-awesome gammastep python-gobject pavucontrol --noconfirm --needed
 systemctl enable chronyd.service
 EOF
 
