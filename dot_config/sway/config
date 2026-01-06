@@ -16,7 +16,7 @@ set $menu swaymsg exec -- $(rofi -show drun)
 #
 exec /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 exec foot --server
-exec waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css
+exec_always pgrep waybar || waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css
 exec blueman-applet
 exec nm-applet
 exec gammastep-indicator -l $(curl -s ipinfo.io | jq '.loc' -r | tr ',' ':')
@@ -257,6 +257,9 @@ bindsym Super+Alt+l exec swaylock --daemonize
 bindsym Print exec grimshot --notify savecopy output ~/Pictures/Screenshots/$filename
 bindsym Alt+Print exec grimshot --notify savecopy active ~/Pictures/Screenshots/$filename
 bindsym Shift+Print exec grimshot --notify savecopy area ~/Pictures/Screenshots/$filename
+bindsym Ctrl+Print exec grimshot --notify copy output ~/Pictures/Screenshots/$filename
+bindsym Ctrl+Alt+Print exec grimshot --notify copy active ~/Pictures/Screenshots/$filename
+bindsym Ctrl+Shift+Print exec grimshot --notify copy area ~/Pictures/Screenshots/$filename
 bindsym XF86Cut exec grimshot --notify savecopy output ~/Pictures/Screenshots/$filename
 bindsym Alt+XF86Cut exec grimshot --notify savecopy active ~/Pictures/Screenshots/$filename
 bindsym Shift+XF86Cut exec grimshot --notify savecopy area ~/Pictures/Screenshots/$filename
