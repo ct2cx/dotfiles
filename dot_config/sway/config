@@ -27,6 +27,11 @@ exec gammastep-indicator -l $(curl -s ipinfo.io | jq '.loc' -r | tr ',' ':')
 seat seat0 xcursor_theme Bibata-Modern-Classic 20
 
 #
+### Hide cursor after x milliseconds
+#
+seat seat0 hide_cursor 10000
+
+#
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
