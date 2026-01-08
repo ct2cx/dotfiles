@@ -24,7 +24,7 @@ window#waybar.topbar {
 
 #workspaces {
   margin: 10px;
-  margin-left: 10px;
+  margin-left: 8px;
   margin-right:0px;
   padding: 0px;
 }
@@ -79,7 +79,7 @@ window#waybar.topbar {
   &.critical {
     background: Scheme.$error linear-gradient(to bottom, rgba(white, 0.4), Scheme.$error);
   }
-  margin-right: 14px - list.nth($inner-padding, 2);
+  margin-right: $global-spacing;
 }
 
 #cpu, #memory {
@@ -131,14 +131,13 @@ window#waybar.topbar {
 #clock.time {
   @include decorate;
   color: Scheme.$time-fg;
-  margin-right: $global-spacing;
+  margin-right: 8px;
   background: Scheme.$time-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$time-bg);
 }
 
 #clock.date {
   @include decorate;
   color: Scheme.$date-fg;
-  margin-right: $global-spacing;
   background: Scheme.$date-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$date-bg);
 }
 
