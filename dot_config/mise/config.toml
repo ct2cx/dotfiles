@@ -1,3 +1,4 @@
 [tools]
 node = "latest"
 "npm:webtorrent-cli" = "latest"
+uv = "latest"
