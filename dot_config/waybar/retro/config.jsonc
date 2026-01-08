@@ -4,7 +4,8 @@
 	"spacing": 0,
 	"reload_style_on_change": true,
 	"modules-left": ["sway/workspaces", "sway/mode"],
-	"modules-right": ["privacy", "tray", "cpu", "memory", "group/audio" ,"battery"],
+	"modules-center": ["clock#date"],
+	"modules-right": ["privacy", "tray", "cpu", "memory", "group/audio" ,"battery", "clock#time"],
 
 	"sway/workspaces": {
 		"format": "{index}",
@@ -102,6 +103,23 @@
 				"tooltip-icon-size": 18
 			}
 		]
+	},
+
+	"clock#time": {
+		"format": "󰥔 {:%H:%M:%S}",
+		"tooltip": false,
+		"interval": 1
+	},
+
+	"clock#date": {
+		"format": " {:%a, %d %b %Y}",
+		"tooltip-format": "{calendar}",
+		"calendar": {
+			"mode": "year",
+			"mode-mon-col": 4,
+			"format": {
+				"today": "<b><u>{}</u></b>",
+			}
+		}
 	}
 }
-

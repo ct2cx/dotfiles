@@ -128,6 +128,20 @@ window#waybar.topbar {
   margin-right: $global-spacing;
 }
 
+#clock.time {
+  @include decorate;
+  color: Scheme.$time-fg;
+  margin-right: $global-spacing;
+  background: Scheme.$time-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$time-bg);
+}
+
+#clock.date {
+  @include decorate;
+  color: Scheme.$date-fg;
+  margin-right: $global-spacing;
+  background: Scheme.$date-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$date-bg);
+}
+
 tooltip {
   all: unset;
 }
