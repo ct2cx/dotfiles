@@ -22,7 +22,7 @@ window#waybar.topbar {
   color: #21252b;
 }
 #workspaces button.focused {
-  background: #c678dd linear-gradient(to bottom, rgba(255, 255, 255, 0.4), #c678dd);
+  background: #56b6c2 linear-gradient(to bottom, rgba(255, 255, 255, 0.4), #56b6c2);
   color: #21252b;
 }
 #workspaces button.urgent {
@@ -42,7 +42,7 @@ window#waybar.topbar {
   margin: 10px 0px;
   padding: 2px 6px;
   border-radius: 5px;
-  background: #61afef linear-gradient(to bottom, rgba(255, 255, 255, 0.4), #61afef);
+  background: #56b6c2 linear-gradient(to bottom, rgba(255, 255, 255, 0.4), #56b6c2);
   color: #21252b;
   margin-right: 6px;
 }
@@ -79,7 +79,7 @@ window#waybar.topbar {
   padding: 2px 6px;
   border-radius: 5px;
   margin-right: 6px;
-  background: #abb2bf linear-gradient(to bottom, rgba(255, 255, 255, 0.4), #abb2bf);
+  background: #56b6c2 linear-gradient(to bottom, rgba(255, 255, 255, 0.4), #56b6c2);
   color: #21252b;
 }
 #cpu.moderate, #memory.moderate {
@@ -140,7 +140,7 @@ window#waybar.topbar {
   padding: 2px 6px;
   border-radius: 5px;
   color: #21252b;
-  background: #d19a66 linear-gradient(to bottom, rgba(255, 255, 255, 0.4), #d19a66);
+  background: #56b6c2 linear-gradient(to bottom, rgba(255, 255, 255, 0.4), #56b6c2);
 }
 
 tooltip {

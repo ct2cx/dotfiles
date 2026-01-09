@@ -4,7 +4,7 @@ $fg: C.$fg;
 $bg: C.$bg_d;
 $bg1: C.$black;
 
-$ws-focused-bg: C.$purple;
+$ws-focused-bg: C.$cyan;
 $ws-focused-fg: $bg;
 $ws-urgent-bg: C.$red;
 $ws-urgent-fg: $bg;
@@ -23,15 +23,15 @@ $mode-fg: $bg;
 $mode-bg: C.$yellow;
 
 $audio-fg: $bg;
-$audio-bg: C.$blue;
+$audio-bg: C.$cyan;
 
 $sys-stat-fg: $bg;
-$sys-stat-bg: $fg;
+$sys-stat-bg: C.$cyan;
 
 $time-fg: $bg;
 $time-bg: C.$cyan;
 
 $date-fg: $bg;
-$date-bg: C.$orange;
+$date-bg: C.$cyan;
 
 $tray-bg: C.$bg1;
