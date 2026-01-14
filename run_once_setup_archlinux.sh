@@ -41,7 +41,7 @@ pacman -Syu aria2 git sway swaybg waybar dunst fish neovim pipewire pipewire-pul
 firefox noto-fonts noto-fonts-emoji nwg-look inter-font gcc tmux unzip eza papirus-icon-theme chezmoi \
 wl-clipboard xdg-desktop-portal-gtk xdg-desktop-portal-wlr openssh ttf-jetbrains-mono-nerd \
 man-db sway-contrib xorg-xwayland network-manager-applet mate-polkit chrony xz ddcutil rofi \
-foot otf-font-awesome gammastep python-gobject pavucontrol --noconfirm --needed
+foot otf-font-awesome gammastep python-gobject pavucontrol which xdg-utils --noconfirm --needed
 systemctl enable chronyd.service
 EOF
 
