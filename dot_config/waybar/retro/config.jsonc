@@ -106,8 +106,8 @@
 	},
 
 	"clock#time": {
-		"format": "󰥔 {:%H:%M:%S}",
-		"tooltip": false,
+		"format": "󰥔 {:%H:%M}",
+		"tooltip-format": "{:%H:%M:%S}",
 		"interval": 1
 	},
 

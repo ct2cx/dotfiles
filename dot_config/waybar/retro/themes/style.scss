@@ -71,7 +71,7 @@ window#waybar.topbar {
   color: Scheme.$bg;
   @include decorate;
   &.good {
-    background: Scheme.$success linear-gradient(to bottom, rgba(white, 0.4), Scheme.$success);
+    background: Scheme.$ws-focused-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$ws-focused-bg);
   }
   &.warning {
     background: Scheme.$warning linear-gradient(to bottom, rgba(white, 0.4), Scheme.$warning);
