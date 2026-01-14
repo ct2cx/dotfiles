@@ -18,16 +18,17 @@ if test $status -eq 0
 end
 
 # Setting up aliases
-alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias playau="mpv --no-video --ytdl-format=bestaudio"
-alias gis="git status"
-alias gid="git diff"
-alias gia="git add"
-alias gic="git commit"
-alias gip="git push"
-alias gil="git log"
-alias sass="sass --no-source-map"
-alias playtorrent="webtorrent download --mpv"
+abbr -a update-grub sudo grub-mkconfig -o /boot/grub/grub.cfg
+abbr -a playau mpv --no-video --ytdl-format=bestaudio
+abbr -a gis git status
+abbr -a gid git diff
+abbr -a gia git add
+abbr -a gic git commit
+abbr -a gip git push
+abbr -a gil git log
+abbr -a sass sass --no-source-map
+abbr -a playtorrent webtorrent download --mpv
+abbr -a playyt mpv --ytdl-format=bestvideo[height<=1080]+bestaudio
 
 function multicd
     echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
