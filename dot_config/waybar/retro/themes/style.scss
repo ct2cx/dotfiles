@@ -7,7 +7,7 @@ $inner-padding: 2px 6px;
 $global-border-radius: 5px;
 
 @mixin font {
-  font: 12px JetBrainsMono Nerd Font Propo;
+  font: bold 12px JetBrainsMono Nerd Font Propo;
 }
 
 @mixin decorate {
