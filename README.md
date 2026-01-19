@@ -3,5 +3,4 @@
 ![launcher](./media/launcher.png)
 ![powermenu](./media/powermenu.png)
 ![dunst](./media/dunst.png)
-![waybar-simple](./media/waybar-simple.png)
 ![waybar-retro](./media/waybar-retro.png)
