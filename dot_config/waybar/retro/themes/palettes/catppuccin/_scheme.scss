@@ -1,10 +1,10 @@
-@use "catppuccin-macchiato" as C;
+@use "catppuccin-mocha" as C;
 
 $fg: C.$text;
 $bg: C.$mantle;
 $bg1: C.$crust;
 
-$ws-focused-bg: C.$sapphire;
+$ws-focused-bg: C.$lavender;
 $ws-focused-fg: $bg;
 $ws-urgent-bg: C.$red;
 $ws-urgent-fg: $bg;
@@ -23,15 +23,15 @@ $mode-fg: $bg;
 $mode-bg: C.$red;
 
 $audio-fg: $bg;
-$audio-bg: C.$sapphire;
+$audio-bg: C.$lavender;
 
 $sys-stat-fg: $bg;
-$sys-stat-bg: C.$sapphire;
+$sys-stat-bg: C.$lavender;
 
 $time-fg: $bg;
-$time-bg: C.$sapphire;
+$time-bg: C.$lavender;
 
 $date-fg: $bg;
-$date-bg: C.$sapphire;
+$date-bg: C.$lavender;
 
 $tray-bg: C.$surface0;

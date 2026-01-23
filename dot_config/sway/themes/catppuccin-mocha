@@ -28,7 +28,7 @@ set $crust #11111b
 # client.<class>			border			background	text-color	indicator	child_border
 client.focused				$lavender		$lavender	$base		$lavender	$lavender
 client.focused_inactive 	$surface1		$base	  	$text	  	$surface1	$surface1
-client.unfocused			$surface1		$base	  	$overlay0	$surface1	$surface1
+client.unfocused			$surface1		$base	  	$surface1	$surface1	$surface1
 client.urgent				$red			$base	  	$red	  	$red		$red
 
 output * bg $base solid_color
