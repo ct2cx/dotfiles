@@ -4,7 +4,6 @@
 	"spacing": 0,
 	"reload_style_on_change": true,
 	"modules-left": ["sway/workspaces", "sway/mode"],
-	"modules-center": ["clock#date"],
 	"modules-right": ["privacy", "tray", "cpu", "memory", "group/audio", "clock#time", "battery"],
 
 	"sway/workspaces": {
@@ -108,11 +107,7 @@
 	"clock#time": {
 		"format": "󰥔 {:%H:%M}",
 		"tooltip-format": "{:%H:%M:%S}",
-		"interval": 1
-	},
-
-	"clock#date": {
-		"format": " {:%a, %d %b %Y}",
+		"interval": 1,
 		"tooltip-format": "{calendar}",
 		"calendar": {
 			"mode": "year",
