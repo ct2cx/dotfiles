@@ -131,7 +131,7 @@ window#waybar.topbar {
 #clock.time {
   @include decorate;
   color: Scheme.$time-fg;
-  margin-right: 8px;
+  margin-right: $global-spacing;
   background: Scheme.$time-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$time-bg);
 }
 
