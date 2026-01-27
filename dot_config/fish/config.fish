@@ -18,6 +18,7 @@ if test $status -eq 0
 end
 
 # Setting up aliases
+alias svgtoqml="/usr/lib/qt6/bin/svgtoqml"
 abbr -a update-grub sudo grub-mkconfig -o /boot/grub/grub.cfg
 abbr -a playau mpv --no-video --ytdl-format=bestaudio
 abbr -a gis git status
