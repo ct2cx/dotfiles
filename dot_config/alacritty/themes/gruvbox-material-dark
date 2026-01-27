@@ -1,0 +1,25 @@
+[colors.primary]
+background = '#282828'  # bg0
+foreground = '#d4be98'  # fg0
+
+[colors.normal]
+black = '#282828'  # bg0
+red = '#ea6962'  # red
+green = '#a9b665'  # green
+yellow = '#d8a657'  # yellow
+blue = '#7daea3'  # blue
+magenta = '#d3869b'  # purple
+cyan = '#89b482'  # green
+white = '#d4be98'  # fg0
+
+[colors.bright]
+black = '#7C6F64'  # bg5
+red = '#ea6962'
+green = '#a9b665'
+yellow = '#d8a657'
+blue = '#7daea3'
+magenta = '#d3869b'
+cyan = '#89b482'
+white = '#d4be98'
+
+# vim: ft=toml

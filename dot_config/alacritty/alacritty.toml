@@ -1,0 +1,14 @@
+general.import = [ "theme" ]
+
+[window]
+padding = { x = 10, y = 10 }
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font" }
+size = 12
+
+[mouse]
+hide_when_typing = true
+
+[terminal]
+shell = "/usr/bin/fish"
