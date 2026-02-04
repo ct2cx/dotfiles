@@ -36,6 +36,10 @@ window#waybar.topbar {
   margin-right: 6px;
   background: Scheme.$ws-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$ws-bg);
   color: Scheme.$ws-fg;
+  &.active {
+    background: Scheme.$ws-focused-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$ws-focused-bg);
+    color: Scheme.$ws-focused-fg;
+  }
   &.focused {
     background: Scheme.$ws-focused-bg linear-gradient(to bottom, rgba(white, 0.4), Scheme.$ws-focused-bg);
     color: Scheme.$ws-focused-fg;

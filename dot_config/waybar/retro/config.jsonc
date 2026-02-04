@@ -3,8 +3,13 @@
 	"position": "bottom",
 	"spacing": 0,
 	"reload_style_on_change": true,
-	"modules-left": ["sway/workspaces", "sway/mode"],
+	// "modules-left": ["sway/workspaces", "sway/mode"],  // for swaywm
+	"modules-left": ["ext/workspaces"],  // for mangowc
 	"modules-right": ["privacy", "tray", "cpu", "memory", "group/audio", "clock#time", "battery"],
+
+	"ext/workspaces": {
+		"format": "{name}"
+	},
 
 	"sway/workspaces": {
 		"format": "{index}",

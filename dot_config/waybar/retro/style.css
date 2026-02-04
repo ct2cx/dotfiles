@@ -21,7 +21,7 @@ window#waybar.topbar {
   background: #6c7086 linear-gradient(to bottom, rgba(255, 255, 255, 0.4), #6c7086);
   color: #181825;
 }
-#workspaces button.focused {
+#workspaces button.active {
   background: #b4befe linear-gradient(to bottom, rgba(255, 255, 255, 0.4), #b4befe);
   color: #181825;
 }
