@@ -1,0 +1,54 @@
+[global]
+follow = mouse
+width = (300,400)
+progress_bar_max_width = 500
+notification_limit =3
+offset = (20,20)
+gap_size = 5
+horizontal_padding = 20
+padding = 15
+idle_threshold = 60
+show_age_threshold = 90
+font = "JetBrainsMono Nerd Font Propo 10"
+frame_width = 1
+mouse_left_click = context, do_action
+mouse_middle_click = close_all
+mouse_right_click = close_current
+
+[spotify]
+appname = "Spotify"
+max_icon_size = 64
+urgency = low
+
+[grimshot]
+appname = "grimshot"
+max_icon_size = 240
+urgency = low
+
+[grim]
+appname = "grim"
+max_icon_size = 240
+urgency = low
+
+[urgency_critical]
+background = "#f38ba8"
+foreground = "#1e1e2e"
+frame_color = "#f38ba8"
+highlight = "#f38ba8"
+format = "<span color='#1e1e2e'>%a</span>\n<b>%s</b>\n%b"
+
+[urgency_normal]
+background = "#b4befe"
+foreground = "#1e1e2e"
+frame_color = "#b4befe"
+highlight = "#b4befe"
+format = "<span color='#1e1e2e'>%a</span>\n<b>%s</b>\n%b"
+timeout = 10
+
+[urgency_low]
+background = "#585b70"
+foreground = "#1e1e2e"
+frame_color = "#585b70"
+highlight = "#585b70"
+format = "<span color='#1e1e2e'>%a</span>\n<b>%s</b>\n%b"
+timeout = 5
