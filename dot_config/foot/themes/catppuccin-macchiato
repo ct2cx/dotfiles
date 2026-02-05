@@ -3,7 +3,7 @@ cursor=181926 f4dbd6
 foreground=cad3f5
 background=24273a
 
-regular0=24273a
+regular0=494d64
 regular1=ed8796
 regular2=a6da95
 regular3=eed49f
@@ -38,7 +38,7 @@ cursor=eff1f5 dc8a78
 foreground=4c4f69
 background=eff1f5
 
-regular0=eff1f5
+regular0=5c5f77
 regular1=d20f39
 regular2=40a02b
 regular3=df8e1d
@@ -67,5 +67,3 @@ search-box-match=4c4f69 ccd0da
 
 jump-labels=dce0e8 fe640b
 urls=1e66f5
-
-#vi: ft=dosini

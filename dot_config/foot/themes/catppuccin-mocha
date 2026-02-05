@@ -3,7 +3,7 @@ cursor=11111b f5e0dc
 foreground=cdd6f4
 background=1e1e2e
 
-regular0=1e1e2e
+regular0=45475a
 regular1=f38ba8
 regular2=a6e3a1
 regular3=f9e2af
@@ -38,7 +38,7 @@ cursor=eff1f5 dc8a78
 foreground=4c4f69
 background=eff1f5
 
-regular0=eff1f5
+regular0=5c5f77
 regular1=d20f39
 regular2=40a02b
 regular3=df8e1d
@@ -67,5 +67,3 @@ search-box-match=4c4f69 ccd0da
 
 jump-labels=dce0e8 fe640b
 urls=1e66f5
-
-#vi: ft=dosinit
