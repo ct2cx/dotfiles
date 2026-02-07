@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
-config.color_scheme = 'Catppuccin Mocha'
+config.color_scheme = 'Catppuccin Macchiato'
 config.freetype_load_target = 'HorizontalLcd'
 config.default_prog = {'/usr/bin/fish', '-l'}
 

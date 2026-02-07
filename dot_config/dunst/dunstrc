@@ -9,8 +9,9 @@ horizontal_padding = 20
 padding = 15
 idle_threshold = 60
 show_age_threshold = 90
-font = "JetBrainsMono Nerd Font Propo 10"
+font = "Maple Mono NL NF 10"
 frame_width = 1
+corner_radius = 10
 mouse_left_click = context, do_action
 mouse_middle_click = close_all
 mouse_right_click = close_current
@@ -31,24 +32,24 @@ max_icon_size = 240
 urgency = low
 
 [urgency_critical]
-background = "#f38ba8"
-foreground = "#1e1e2e"
-frame_color = "#f38ba8"
-highlight = "#f38ba8"
-format = "<span color='#1e1e2e'>%a</span>\n<b>%s</b>\n%b"
+background = "#ed8796"
+foreground = "#24273a"
+frame_color = "#ed8796"
+highlight = "#ed8796"
+format = "<span color='#24273a'>%a</span>\n<b>%s</b>\n%b"
 
 [urgency_normal]
-background = "#b4befe"
-foreground = "#1e1e2e"
-frame_color = "#b4befe"
-highlight = "#b4befe"
-format = "<span color='#1e1e2e'>%a</span>\n<b>%s</b>\n%b"
+background = "#b7bdf8"
+foreground = "#24273a"
+frame_color = "#b7bdf8"
+highlight = "#b7bdf8"
+format = "<span color='#24273a'>%a</span>\n<b>%s</b>\n%b"
 timeout = 10
 
 [urgency_low]
-background = "#585b70"
-foreground = "#1e1e2e"
-frame_color = "#585b70"
-highlight = "#585b70"
-format = "<span color='#1e1e2e'>%a</span>\n<b>%s</b>\n%b"
+background = "#5b6078"
+foreground = "#24273a"
+frame_color = "#5b6078"
+highlight = "#5b6078"
+format = "<span color='#24273a'>%a</span>\n<b>%s</b>\n%b"
 timeout = 5

@@ -1,0 +1,27 @@
+@import "catppuccin-macchiato"
+
+* {
+	text: @textt;
+	bg: @mantle;
+	magenta: @pink;
+	cyan: @sky;
+
+	error: @red;
+	success: @green;
+	moderate: @peach;
+	warning: @yellow;
+	info: @blue;
+	ignored: @surface2;
+	hover: @base;
+
+	entry-bg: @surface0;
+	element-selected-bg: @surface1;
+	text-highlight-fg: bold #f38ba8;
+
+	powermenu-textbox-bg: @sky;
+	powermenu-textbox-fg: @mantle;
+	powermenu-element-text-bg: @base;
+	powermenu-element-text-fg: @surface1;
+	powermenu-element-text-selected-bg: @red;
+	powermenu-element-text-selected-fg: @mantle;
+}
