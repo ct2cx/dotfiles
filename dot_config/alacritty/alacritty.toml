@@ -4,7 +4,7 @@ general.import = [ "theme" ]
 padding = { x = 10, y = 10 }
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font" }
+normal = { family = "Maple Mono NF" }
 size = 12
 
 [mouse]

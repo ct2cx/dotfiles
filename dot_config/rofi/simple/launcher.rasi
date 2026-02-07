@@ -6,7 +6,7 @@ configuration {
 }
 
 window {
-	font: "JetBrainsMono Nerd Font Propo 13";
+	font: "Maple Mono NL NF 12";
 	width: 25%;
 	height: 40.4%;
 	background-color: @bg;

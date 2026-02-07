@@ -1,7 +1,7 @@
 @import "palettes/catppuccin/scheme"
 
 window {
-	font: "JetBrainsMono Nerd Font Propo 13";
+	font: "Maple Mono NL NF 13";
 	height: 220px;
 	width: 502px;
 	padding: 10px;
@@ -32,7 +32,7 @@ element-text.selected {
 }
 
 element-text {
-	font: "JetBrains Mono Nerd Font Propo 30";
+	font: "Maple Mono NL NF 30";
 	background-color: @powermenu-element-text-bg;
 	text-color: @powermenu-element-text-fg;
 	padding: 45px 0px 45px 59px;
