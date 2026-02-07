@@ -1,0 +1,10 @@
+[Unit]
+Description=Unbind keyboard after sleep
+After=suspend.target hibernate.target hybrid-sleep.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'echo serio0 > /sys/bus/serio/drivers/atkbd/unbind'
+
+[Install]
+WantedBy=suspend.target hibernate.target hybrid-sleep.target
