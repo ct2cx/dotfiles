@@ -22,6 +22,8 @@ config.font_size = 12
 
 config.detect_password_input = false
 config.enable_tab_bar = false 
+config.enable_wayland = true
+config.window_decorations = "RESIZE"
 config.window_close_confirmation = 'NeverPrompt'
 config.window_padding = {
 	top = 10,
