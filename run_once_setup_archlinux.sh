@@ -16,6 +16,16 @@ setup_cursor() {
 	fi
 }
 
+setup_font() {
+	if [ ! -d ~/.local/share/fonts/MapleMonoNL-NF ]; then
+		mkdir -p ~/.local/share/fonts/MapleMonoNL-NF
+		dwnlod "https://github.com/subframe7536/maple-font/releases/latest/download/MapleMonoNL-NF.zip"
+		unzip MapleMonoNL-NF.zip -d ~/.local/share/fonts/MapleMonoNL-NF
+	else
+		echo '`MapleMono` folder found, font likely exists'
+	fi
+}
+
 setup_themes() {
 	gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'
 	gsettings set org.gnome.desktop.interface cursor-size 20
@@ -48,5 +58,6 @@ EOF
 cd /tmp
 setup_cursor
 setup_themes
+setup_font
 setup_tmux
 cd
