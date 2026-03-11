@@ -1,0 +1,149 @@
+@define-color bg #191919;
+@define-color fg #BBBBBB;
+@define-color grey #8E8E8E;
+@define-color hover #262626;
+@define-color ignored #3D3839;
+@define-color red #DE6E7C;
+@define-color green #819B69;
+@define-color yellow #B77E64;
+@define-color blue #6099C0;
+@define-color magenta #B279A7;
+@define-color cyan #66A5AD;
+@define-color red-bright #E8838F;
+@define-color green-bright #8BAE68;
+@define-color yellow-bright #D68C67;
+@define-color blue-bright #61ABDA;
+@define-color magenta-bright #CF86C1;
+@define-color cyan-bright #65B8C1;
+
+.bar {
+	font: 15px IosevkaTerm Nerd Font;
+	color: @fg;
+	background: transparent;
+}
+
+#workspaces {
+	background-color: @bg;
+	border: 1px solid @ignored;
+	border-radius: 6px;
+	padding: 3px 5px;
+}
+
+#workspaces button {
+	all: unset;
+	padding: 0px 2px;
+	color: @grey;
+}
+
+#workspaces button.active {
+	color: @fg;
+}
+
+#workspaces button.visible {
+	color: @fg;
+}
+
+#window {
+	padding: 3px 7px;
+	border: 1px solid @ignored;
+	border-radius: 6px;
+	background-color: @bg;
+}
+
+window#waybar.empty #window {
+	opacity: 0;
+}
+
+#privacy {
+	color: @yellow;
+	padding: 3px 7px;
+	border: 1px solid @ignored;
+	border-radius: 6px;
+	background-color: @bg;
+}
+
+#tray {
+	padding: 3px 7px;
+	border: 1px solid @ignored;
+	border-radius: 6px;
+	background-color: @bg;
+}
+
+#memory, #cpu {
+	padding: 3px 7px;
+	border: 1px solid @ignored;
+	border-radius: 6px;
+	background-color: @bg;
+}
+
+#memory.warning, #cpu.warning {
+	color: @yellow;
+	border-color: @yellow;
+}
+
+#memory.critical, #cpu.critical {
+	color: @red;
+	border-color: @red;
+}
+
+#pulseaudio.spk, #pulseaudio.mic {
+	padding: 3px 7px;
+	border: 1px solid @ignored;
+	border-radius: 6px;
+	background-color: @bg;
+}
+
+#battery {
+	padding: 3px 7px;
+	border: 1px solid @ignored;
+	border-radius: 6px;
+	background-color: @bg;
+}
+
+#batter.warning {
+	color: @yellow;
+	border-color: @yellow;
+}
+
+#batter.critical {
+	color: @red;
+	border-color: @red;
+}
+
+#clock {
+	padding: 3px 7px;
+	border: 1px solid @ignored;
+	border-radius: 6px;
+	background-color: @bg;
+}
+
+tooltip {
+	background-color: @bg;
+	border: 1px solid @ignored;
+	border-radius: 6px;
+}
+
+tooltip label {
+	font: 14px IosevkaTerm Nerd Font;
+	color: @fg;
+}
+
+#tray menu {
+  color: @fg;
+  background-color: @bg;
+}
+
+#tray menu separator {
+  background-color: @ignored;
+  opacity: 0.4;
+}
+
+#tray menuitem:hover {
+  color: @fg;
+  background-color: @grey-low-light;
+}
+
+#tray menuitem:disabled {
+  color: @grey;
+  opacity: 0.6;
+}

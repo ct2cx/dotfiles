@@ -1,0 +1,105 @@
+* {
+	bg: #191919;
+	fg: #BBBBBB;
+	grey: #8E8E8E;
+	ignored: #3D3839;
+	grey-low-light: hsl(0, 0%, 15%);
+	red: #DE6E7C;
+	green: #819B69;
+	yellow: #B77E64;
+	blue: #6099C0;
+	magenta: #B279A7;
+	cyan: #66A5AD;
+	red-bright: #E8838F;
+	green-bright: #8BAE68;
+	yellow-bright: #D68C67;
+	blue-bright: #61ABDA;
+	magenta-bright: #CF86C1;
+	cyan-bright: #65B8C1;
+}
+
+configuration {
+	modes: [drun];
+	show-icons: true;
+	drun-display-format: "{name}";
+	drun-match-fields: [name,exec];
+	display-drun: "Apps :: ";
+	scroll-method: 1;
+	steal-focus: true;
+}
+
+mainbox {
+	spacing: 20px;
+}
+
+mainbox, window, inputbar, prompt, entry, element, element-icon, element-text, listview {
+	background-color: @bg;
+}
+
+entry, element-text {
+	text-color: @fg;
+}
+
+window {
+	font: "IosevkaTerm Nerd Font 14";
+	width: 450px;
+	height: 370px;
+	padding: 15px 20px;
+	border: 1px;
+	border-color: @grey;
+	border-radius: 6px;
+}
+
+inputbar {
+	children: [prompt, entry];
+}
+
+prompt {
+	text-color: @green;
+	text-transform: bold;
+}
+
+entry {
+	placeholder-color: @ignored;
+}
+
+listview {
+	spacing: 10px;
+	scrollbar: true;
+	children: [element, scrollbar];
+}
+
+element-icon, element-text {
+	vertical-align: 0.5;
+}
+
+element-icon selected, element-text selected, element selected {
+	background-color: @grey-low-light;
+}
+
+element selected {
+	border-radius: 4px;
+}
+
+element {
+	padding: 5px 5px;
+	orientation: horizontal;
+	spacing: 10px;
+}
+
+element-icon {
+	size: 1.25em;
+}
+
+scrollbar {
+	handle-width: 5px;
+	handle-color: @grey;
+	background-color: @grey-low-light;
+	border-radius: 6px;
+	handle-rounded-corners: true;
+}
+
+textbox {
+	background-color: @bg;
+	text-color: @red;
+}

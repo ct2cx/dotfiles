@@ -1,0 +1,86 @@
+{
+	"name": "bar",
+	"layer": "top",
+	"position": "bottom",
+	"margin": "0 10 10 10",
+	"spacing": 10,
+	"reload_style_on_change": true,
+	"modules-left": ["hyprland/workspaces", "hyprland/window"],
+	"modules-right": ["privacy", "tray", "cpu", "memory", "pulseaudio#mic", "pulseaudio#spk", "battery", "clock"],
+
+	"hyprland/window": {
+		"format": "{class}",
+		"separate-outputs": true
+	},
+
+	"privacy": {
+		"icon-size": 14,
+		"transition-duration": 0
+	},
+
+	"tray": {
+		"spacing": 4,
+		"icon-size": 14
+	},
+
+	"cpu": {
+		"format": "  {usage}%",
+		"interval": 2,
+		"states": {
+			"warning": 50,
+			"critical": 90
+		}
+	},
+
+	"memory": {
+		"format": "  {percentage}%",
+		"interval": 2,
+		"states": {
+			"warning": 50,
+			"critical": 90
+		}
+	},
+
+	"pulseaudio#mic": {
+		"format": "{format_source}",
+		"format-source": "󰍬 {volume}%",
+		"format-source-muted": "󰍭 muted",
+		"scroll-step": 5,
+		"on-click": "pavucontrol",
+		"on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+		"on-scroll-up": "wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep MUTED || wpctl set-volume -l 1 @DEFAULT_AUDIO_SOURCE@ 5%+",
+		"on-scroll-down": "wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep MUTED || wpctl set-volume -l 1 @DEFAULT_AUDIO_SOURCE@ 5%-"
+	},
+
+	"pulseaudio#spk": {
+		"format": "{icon} {volume}%",
+		"format-muted": "󰖁 muted",
+		"format-icons": {
+			"headphone": "󰋋",
+			"headset": "󰋎",
+			"default": ["󰕿", "󰖀", "󰕾"]
+		},
+		"scroll-step": 5,
+		"on-click": "pavucontrol",
+		"on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+		"on-scroll-up": "wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep MUTED || wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+",
+		"on-scroll-down": "wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep MUTED || wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%-"
+	},
+
+	"battery": {
+		"format": "{icon} {capacity}%",
+		"format-icons": {
+			"default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+			"charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+		},
+		"interval": 5,
+		"states": {
+			"warning": 30,
+			"critical": 15
+		}
+	},
+
+	"clock": {
+		"tooltip": false
+	}
+}

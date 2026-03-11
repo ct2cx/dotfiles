@@ -1,0 +1,9 @@
+[user]
+	name = ct2cx
+	email = ct2cx@protonmail.com
+[commit]
+	gpgsign = true
+[gpg]
+	signingkey = 65F76CCAE58B8F25
+[init]
+	defaultbranch = main

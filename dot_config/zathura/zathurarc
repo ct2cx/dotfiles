@@ -1,0 +1,18 @@
+set default-bg \#191919
+set default-fg \#BBBBBB
+
+set inputbar-bg \#3D3839
+set inputbar-fg \#BBBBBB
+
+set notification-bg \#191919
+set notification-fg \#BBBBBB
+set notification-error-bg \#191919
+set notification-error-fg \#DE6E7C
+set notification-warning-bg \#191919
+set notification-warning-fg \#B77E64
+
+set recolor true
+set recolor-lightcolor \#191919
+set recolor-darkcolor \#BBBBBB
+
+set highlight-color rgba(183,126,100,0.3)

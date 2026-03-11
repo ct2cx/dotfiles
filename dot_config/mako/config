@@ -1,0 +1,18 @@
+max-history=50
+on-button-middle=dismiss-all
+font=IosevkaTerm Nerd Font Propo 11
+text-color=#BBBBBB
+background-color=#191919
+width=350
+height=500
+outer-margin=10
+margin=7
+padding=10
+border-size=1
+border-color=#8E8E8E
+border-radius=6
+progress-color=source #262626
+format=%a\n<b>%s</b>\n%b  
+
+[urgency=critical]
+border-color=#DE6E7C
