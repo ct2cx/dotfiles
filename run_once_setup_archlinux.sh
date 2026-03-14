@@ -22,7 +22,8 @@ install_packages() {
 	sudo pacman -S alacritty wl-clipboard git hyprland noto-fonts noto-fonts-emoji \
 		unzip waybar mako network-manager-applet less man-db pcmanfm \
 		rofi papirus-icon-theme fish nvim nwg-look tmux zathura \
-		ttf-iosevkaterm-nerd ttf-ibmplex-mono-nerd --needed --noconfirm
+		ttf-iosevkaterm-nerd ttf-ibmplex-mono-nerd pipewire pipewire-pulse \
+		wireplumber pavucontrol brightnessctl --needed --noconfirm
 }
 
 install_packages
