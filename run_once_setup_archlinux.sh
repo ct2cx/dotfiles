@@ -23,7 +23,7 @@ install_packages() {
 		unzip waybar mako network-manager-applet less man-db pcmanfm \
 		rofi papirus-icon-theme fish nvim nwg-look tmux zathura \
 		ttf-iosevkaterm-nerd ttf-ibmplex-mono-nerd pipewire pipewire-pulse \
-		wireplumber pavucontrol brightnessctl --needed --noconfirm
+		wireplumber pavucontrol brightnessctl wlr-randr --needed --noconfirm
 }
 
 install_packages
