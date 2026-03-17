@@ -1,0 +1,94 @@
+* {
+	bg: #191919;
+	fg: #BBBBBB;
+	grey: #8E8E8E;
+	ignored: #3D3839;
+	hover: hsl(0, 0%, 15%);
+	red: #DE6E7C;
+	green: #819B69;
+	yellow: #B77E64;
+	blue: #6099C0;
+	magenta: #B279A7;
+	cyan: #66A5AD;
+	red-bright: #E8838F;
+	green-bright: #8BAE68;
+	yellow-bright: #D68C67;
+	blue-bright: #61ABDA;
+	magenta-bright: #CF86C1;
+	cyan-bright: #65B8C1;
+}
+
+window {
+	font: "IosevkaTerm Nerd Font Propo Bold 11";
+	height: 153;
+	width: 427;
+	children: [ mainbox ];
+	background-color: @bg;
+	border: 1;
+	border-radius: 6;
+	border-color: @grey;
+}
+
+mainbox {
+	padding: 10;
+	children: [ titlebox, listview ];
+	orientation: vertical;
+}
+
+titlebox {
+	expand: false;
+	orientation: horizontal;
+	children: [ textbox-power, textbox-uptime ];
+	padding: 0 0 2 0;
+}
+
+textbox-power {
+	expand: false;
+	text-color: @bg;
+	background-color: @fg;
+	content: "POWER";
+}
+
+textbox-uptime {
+	text-color: @fg;
+	background-color: @hover;
+}
+
+textbox-power, textbox-uptime {
+	vertical-align: 0.5;
+	padding: 5 8;
+	border-radius: 4;
+}
+
+element {
+	children: [ element-text ];
+	border-radius: 4;
+	padding: 20 30;
+}
+
+element-text {
+	text-color: @fg;
+	padding: 0 2;
+}
+
+element, element-text {
+	font: "IosevkaTerm Nerd Font Propo 30";
+	background-color: @hover;
+}
+
+element selected, element-text selected {
+	text-color: @bg;
+	background-color: @fg;
+}
+
+listview {
+	layout: horizontal;
+}
+
+window, mainbox, listview, titlebox {
+	background-color: @bg;
+}
+
+mainbox, listview, titlebox {
+	spacing: 10;
+}

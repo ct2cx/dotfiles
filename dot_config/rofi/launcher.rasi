@@ -3,7 +3,7 @@
 	fg: #BBBBBB;
 	grey: #8E8E8E;
 	ignored: #3D3839;
-	grey-low-light: hsl(0, 0%, 15%);
+	hover: hsl(0, 0%, 15%);
 	red: #DE6E7C;
 	green: #819B69;
 	yellow: #B77E64;
@@ -23,13 +23,13 @@ configuration {
 	show-icons: true;
 	drun-display-format: "{name}";
 	drun-match-fields: [name,exec];
-	display-drun: "Apps :: ";
+	display-drun: "Apps";
 	scroll-method: 1;
 	steal-focus: true;
 }
 
 mainbox {
-	spacing: 20px;
+	spacing: 10px;
 }
 
 mainbox, window, inputbar, prompt, entry, element, element-icon, element-text, listview {
@@ -41,7 +41,7 @@ entry, element-text {
 }
 
 window {
-	font: "IosevkaTerm Nerd Font 14";
+	font: "IosevkaTerm Nerd Font Propo 14";
 	width: 450px;
 	height: 370px;
 	padding: 15px 20px;
@@ -55,12 +55,18 @@ inputbar {
 }
 
 prompt {
-	text-color: @green;
+	text-color: @bg;
 	text-transform: bold;
+	background-color: @fg;
+	border-radius: 4;
+	padding: 2 7;
+	margin: 0 5 2 0;
+	vertical-align: 0.5;
 }
 
 entry {
 	placeholder-color: @ignored;
+	vertical-align: 0.5;
 }
 
 listview {
@@ -74,7 +80,7 @@ element-icon, element-text {
 }
 
 element-icon selected, element-text selected, element selected {
-	background-color: @grey-low-light;
+	background-color: @hover;
 }
 
 element selected {
@@ -94,7 +100,7 @@ element-icon {
 scrollbar {
 	handle-width: 5px;
 	handle-color: @grey;
-	background-color: @grey-low-light;
+	background-color: @hover;
 	border-radius: 6px;
 	handle-rounded-corners: true;
 }
