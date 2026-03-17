@@ -1,3 +1,5 @@
 #!/bin/bash
 
+systemctl --user start update-flatpak-fontconfig
 start-hyprland
+systemctl --user stop update-flatpak-fontconfig
