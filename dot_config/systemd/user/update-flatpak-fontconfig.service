@@ -1,0 +1,6 @@
+[Unit]
+Description=Update fontconfig of Flatpak apps as they are installed
+
+[Service]
+Type=exec
+ExecStart=%h/.local/lib/systemd/flatpak-fontconfig.sh
