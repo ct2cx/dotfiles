@@ -2,8 +2,8 @@
 padding = { x = 10, y = 10 }
 
 [font]
-normal = { family = "BlexMono Nerd Font" }
-size = 12.5
+normal = { family = "IosevkaTerm Nerd Font" }
+size = 13.5
 
 [mouse]
 hide_when_typing = true
