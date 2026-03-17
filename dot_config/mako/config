@@ -16,3 +16,10 @@ format=%a\n<b>%s</b>\n%b
 
 [urgency=critical]
 border-color=#DE6E7C
+
+[app-name=blueman summary=Bluetooth\ Authentication actionable]
+on-button-left=invoke-action accept
+on-button-right=invoke-action deny
+
+[app-name=blueman]
+default-timeout=5000
