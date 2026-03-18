@@ -41,9 +41,9 @@ entry, element-text {
 }
 
 window {
-	font: "IosevkaTerm Nerd Font Propo 14";
+	font: "IosevkaTerm Nerd Font Propo 12.5";
 	width: 450px;
-	height: 370px;
+	height: 381px;
 	padding: 15px 20px;
 	border: 1px;
 	border-color: @grey;
