@@ -140,7 +140,7 @@ tooltip label {
 
 #tray menuitem:hover {
   color: @fg;
-  background-color: @grey-low-light;
+  background-color: @hover;
 }
 
 #tray menuitem:disabled {
