@@ -5,11 +5,15 @@
 	"margin": "0 10 10 10",
 	"spacing": 10,
 	"reload_style_on_change": true,
-	"modules-left": ["hyprland/workspaces", "hyprland/window"],
+	"modules-left": ["niri/workspaces", "niri/window"],
 	"modules-right": ["privacy", "tray", "cpu", "memory", "pulseaudio#mic", "pulseaudio#spk", "battery", "clock"],
 
-	"hyprland/window": {
-		"format": "{class}",
+	"niri/workspaces": {
+		"format": "{index}"
+	},
+
+	"niri/window": {
+		"format": "{app_id}",
 		"separate-outputs": true
 	},
 
