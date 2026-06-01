@@ -19,13 +19,13 @@ setup_tmux() {
 }
 
 install_packages() {
-	sudo pacman -S alacritty wl-clipboard git hyprland noto-fonts noto-fonts-emoji \
+	sudo pacman -S alacritty wl-clipboard git niri noto-fonts noto-fonts-emoji \
 		unzip waybar mako network-manager-applet less man-db pcmanfm \
-		rofi papirus-icon-theme fish nvim nwg-look tmux zathura \
-		ttf-iosevkaterm-nerd ttf-ibmplex-mono-nerd pipewire pipewire-pulse \
+		rofi papirus-icon-theme fish nvim emacs nwg-look tmux zathura \
+		ttf-iosevkaterm-nerd pipewire pipewire-pulse \
 		wireplumber pavucontrol brightnessctl wlr-randr ripgrep \
-		xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-hyprland \
-		patch grim slurp hyprpicker libnotify jq --needed --noconfirm
+		xdg-desktop-portal xdg-desktop-portal-gnome \
+		patch libnotify jq --needed --noconfirm
 }
 
 install_packages
